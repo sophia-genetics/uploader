@@ -1,7 +1,8 @@
 import requests
-my_version = "1.01"
+my_version = "1.02"
 my_url = "https://raw.githubusercontent.com/sophia-genetics/uploader/master/wrapper.py"
 my_name = "wrapper2.py"
+
 def get_remote_version():
     url = "https://raw.githubusercontent.com/sophia-genetics/uploader/master/version.txt"
     version_file = requests.get(url)
@@ -16,8 +17,12 @@ def update_self():
 
 
 def main():
+    remote_version = get_remote_version()
     if get_remote_version() > my_version :
         update_self()
+        print("Updated to version {0}.".format(remote_version))
+    else:
+        print("Script is up-to-date (v{0})".format(remote_version))
 
 if __name__ == "__main__":
     main()
