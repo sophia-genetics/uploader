@@ -1,5 +1,5 @@
 import requests
-my_version = "1.02"
+my_version = "1.03"
 my_url = "https://raw.githubusercontent.com/sophia-genetics/uploader/master/wrapper.py"
 my_name = "wrapper2.py"
 
