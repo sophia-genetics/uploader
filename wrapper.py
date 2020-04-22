@@ -1,7 +1,7 @@
 import requests
-my_version = "1.04"
+my_version = "1.05"
 my_url = "https://raw.githubusercontent.com/sophia-genetics/uploader/master/wrapper.py"
-my_name = __file__
+my_name = "wrapper.py"
 
 def get_remote_version():
     url = "https://raw.githubusercontent.com/sophia-genetics/uploader/master/version.txt"
